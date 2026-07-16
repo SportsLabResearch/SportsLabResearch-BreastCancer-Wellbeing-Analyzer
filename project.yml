@@ -1,0 +1,46 @@
+﻿project:
+  name: SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+  description: Scientific software for the multidimensional assessment and longitudinal monitoring of wellbeing and health-related outcomes in women with breast cancer. Its modular architecture can be adapted to other clinical populations.
+  version: 0.1.0-alpha
+  status: development
+
+  organization: SportsLabResearch
+  author: José Pino-Ortega
+  license: MIT
+
+  github: https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+  documentation: https://sportslabresearch.github.io/SportsLabResearch-BreastCancer-Wellbeing-Analyzer/
+
+  doi:
+  zenodo:
+
+  python: ">=3.11"
+
+  population:
+    primary: Women with breast cancer
+    adaptable_to_other_populations: true
+
+  modules:
+    wellbeing: true
+    icbr_m: true
+    blood_pressure: true
+    spo2: true
+    pre_post: true
+    longitudinal: true
+    dashboards: true
+    word_reports: true
+    excel_reports: true
+
+  keywords:
+    - Breast Cancer
+    - Women
+    - Wellbeing
+    - Exercise Oncology
+    - ICBR-M
+    - Blood Pressure
+    - SpO2
+    - Fatigue
+    - Stress
+    - Pain
+    - Longitudinal Monitoring
+    - SportsLabResearch

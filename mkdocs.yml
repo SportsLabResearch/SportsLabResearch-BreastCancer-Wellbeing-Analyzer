@@ -1,0 +1,62 @@
+﻿site_name: SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+site_description: Scientific software for the multidimensional assessment and longitudinal monitoring of wellbeing in women with breast cancer.
+site_url: https://sportslabresearch.github.io/SportsLabResearch-BreastCancer-Wellbeing-Analyzer/
+
+repo_name: SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+repo_url: https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+
+theme:
+  name: material
+  language: en
+
+  palette:
+    - scheme: default
+      primary: pink
+      accent: teal
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - footnotes
+  - def_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Installation: installation.md
+
+  - User Guide:
+      - Overview: user-guide/index.md
+
+  - Validation:
+      - Overview: validation/index.md
+      - Reports: validation/reports.md
+
+  - Technical Reports:
+      - Overview: technical-reports/index.md
+
+  - Citation: citation.md
+  - Publications: publications.md
+  - Downloads: downloads.md
+  - FAQ: faq.md
+  - Changelog: changelog.md

@@ -1,0 +1,35 @@
+﻿cff-version: 1.2.0
+message: "If you use this software, please cite it as follows."
+title: "SportsLabResearch-BreastCancer-Wellbeing-Analyzer"
+type: software
+
+authors:
+  - family-names: "Pino-Ortega"
+    given-names: "José"
+
+version: "0.1.0-alpha"
+
+license: MIT
+
+repository-code: "https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer"
+
+url: "https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer"
+
+abstract: >
+  Scientific software for the multidimensional assessment and longitudinal
+  monitoring of wellbeing and health-related outcomes in women with breast
+  cancer. The modular architecture integrates subjective questionnaires,
+  physiological measurements, longitudinal analyses and automated reporting,
+  and can be adapted to other clinical populations.
+
+keywords:
+  - breast cancer
+  - wellbeing
+  - exercise oncology
+  - blood pressure
+  - SpO2
+  - fatigue
+  - stress
+  - pain
+  - longitudinal monitoring
+  - SportsLabResearch
