@@ -1,0 +1,5 @@
+.md-typeset h1 { font-weight: 750; }
+.md-typeset h2 { font-weight: 650; }
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li { border-radius: 0.65rem; }
+.md-button { border-radius: 0.35rem; }

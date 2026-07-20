@@ -1,62 +1,58 @@
-﻿site_name: SportsLabResearch-BreastCancer-Wellbeing-Analyzer
-site_description: Scientific software for the multidimensional assessment and longitudinal monitoring of wellbeing in women with breast cancer.
+site_name: BreastCancer Wellbeing Analyzer
+site_description: Scientific documentation for SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+site_author: José Pino Ortega · SportsLabResearch
 site_url: https://sportslabresearch.github.io/SportsLabResearch-BreastCancer-Wellbeing-Analyzer/
 
-repo_name: SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer
 repo_url: https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+repo_name: SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer
+edit_uri: ""
+
+copyright: Copyright © 2026 SportsLabResearch
 
 theme:
   name: material
   language: en
-
-  palette:
-    - scheme: default
-      primary: pink
-      accent: teal
-
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - navigation.top
-    - navigation.footer
-    - content.code.copy
-    - search.highlight
     - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 
-plugins:
-  - search
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quick-start.md
+  - User Guide: user-guide.md
+  - Variables: variables.md
+  - Reports: reports.md
+  - Citation: citation.md
 
 markdown_extensions:
   - admonition
   - attr_list
-  - tables
-  - footnotes
-  - def_list
   - md_in_html
+  - tables
+  - toc:
+      permalink: true
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
 
-nav:
-  - Home: index.md
-  - Getting Started: getting-started.md
-  - Installation: installation.md
-
-  - User Guide:
-      - Overview: user-guide/index.md
-
-  - Validation:
-      - Overview: validation/index.md
-      - Reports: validation/reports.md
-
-  - Technical Reports:
-      - Overview: technical-reports/index.md
-
-  - Citation: citation.md
-  - Publications: publications.md
-  - Downloads: downloads.md
-  - FAQ: faq.md
-  - Changelog: changelog.md
+extra_css:
+  - assets/stylesheets/extra.css

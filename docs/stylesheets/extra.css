@@ -1,0 +1,279 @@
+﻿:root {
+  --slr-primary: #123f5a;
+  --slr-secondary: #087f8c;
+  --slr-accent: #17a398;
+  --slr-light: #f3f8fa;
+  --slr-dark: #102a3a;
+}
+
+.md-header {
+  background: linear-gradient(90deg, var(--slr-dark), var(--slr-primary));
+}
+
+.md-tabs {
+  background-color: var(--slr-primary);
+}
+
+.md-main {
+  background-color: #f7fafb;
+}
+
+.md-content__inner {
+  max-width: 1250px;
+}
+
+.md-content h1 {
+  color: var(--slr-primary);
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.md-content h2 {
+  color: var(--slr-primary);
+  margin-top: 2.5rem;
+  font-weight: 750;
+}
+
+.hero {
+  margin: 1rem 0 3rem;
+  padding: 4rem 3rem;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(16, 42, 58, 0.97), rgba(8, 127, 140, 0.90));
+  box-shadow: 0 18px 45px rgba(16, 42, 58, 0.22);
+}
+
+.hero h2 {
+  margin: 0 0 1rem;
+  color: white;
+  font-size: 2.4rem;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.grid.cards > ul > li,
+.grid.cards > ol > li {
+  background: white;
+  border: 1px solid #dce8ed;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(16, 42, 58, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid.cards > ul > li:hover,
+.grid.cards > ol > li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(16, 42, 58, 0.16);
+}
+
+.grid.cards .lg {
+  color: var(--slr-secondary);
+}
+
+.md-button {
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.md-button--primary {
+  background-color: var(--slr-accent) !important;
+  border-color: var(--slr-accent) !important;
+}
+
+.md-button--primary:hover {
+  background-color: #10877e !important;
+  border-color: #10877e !important;
+}
+
+.md-typeset hr {
+  margin: 3rem 0;
+  border-bottom: 1px solid #d9e6eb;
+}
+
+.md-footer {
+  background-color: var(--slr-dark);
+}
+
+@media screen and (max-width: 760px) {
+  .hero {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .md-content h1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* ================================
+   SportsLabResearch statistics
+================================ */
+
+.slr-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.slr-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 145px;
+  padding: 1.5rem;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #dce8ed;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(16, 42, 58, 0.08);
+}
+
+.slr-stat-number {
+  display: block;
+  color: var(--slr-secondary);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.slr-stat-label {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--slr-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* ================================
+   Featured product
+================================ */
+
+.featured-product {
+  position: relative;
+  overflow: hidden;
+  margin: 1.5rem 0 3rem;
+  padding: 2.75rem;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(16, 42, 58, 0.98),
+      rgba(8, 127, 140, 0.92)
+    );
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(16, 42, 58, 0.20);
+}
+
+.featured-product::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.featured-product h3 {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.featured-product p,
+.featured-product strong,
+.featured-product a {
+  position: relative;
+  z-index: 1;
+}
+
+.featured-product .md-button {
+  margin-top: 0.75rem;
+  margin-right: 0.45rem;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.featured-product .md-button:hover {
+  color: var(--slr-dark);
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.featured-product .md-button--primary {
+  color: #ffffff !important;
+}
+
+/* ================================
+   Responsive design
+================================ */
+
+@media screen and (max-width: 900px) {
+  .slr-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .slr-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-product {
+    padding: 2rem 1.35rem;
+  }
+
+  .slr-stat {
+    min-height: 120px;
+  }
+}
+
+/* Corrección de elementos visuales residuales en la portada */
+
+.hero::before,
+.hero::after {
+  display: none !important;
+  content: none !important;
+}
+
+.md-content__inner::before,
+.md-content__inner::after {
+  display: none !important;
+  content: none !important;
+}
+
+.md-typeset .hero > p:first-of-type::before,
+.md-typeset .hero > p:first-of-type::after {
+  display: none !important;
+  content: none !important;
+}
+
+
+/* SPORTSLAB HEADER LOGO */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: contain;
+}
+
+.md-header__title {
+  margin-left: 0.35rem;
+}
+
