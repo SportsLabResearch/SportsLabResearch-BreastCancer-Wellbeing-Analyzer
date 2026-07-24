@@ -17,6 +17,8 @@ from typing import Iterable
 import pandas as pd
 
 from src.config.project_config import INPUT, OUTPUT, RESULTS, ROOT
+from src.config.variable_mapping import prepare_form_dataframe
+from src.cleaning.clinical_cleaning import clean_clinical_data
 
 
 DRIVE_FOLDERS = [
@@ -272,7 +274,10 @@ def read_source_file(path: Path) -> pd.DataFrame:
             sheet_name=sheet,
         )
 
-        return clean_columns(dataframe)
+        dataframe = clean_columns(dataframe)
+        dataframe = prepare_form_dataframe(dataframe)
+        dataframe = clean_clinical_data(dataframe)
+        return dataframe
 
     if extension == ".csv":
         dataframe = pd.read_csv(
@@ -283,7 +288,10 @@ def read_source_file(path: Path) -> pd.DataFrame:
             on_bad_lines="skip",
         )
 
-        return clean_columns(dataframe)
+        dataframe = clean_columns(dataframe)
+        dataframe = prepare_form_dataframe(dataframe)
+        dataframe = clean_clinical_data(dataframe)
+        return dataframe
 
     if extension == ".txt":
         text = (
@@ -311,7 +319,10 @@ def read_source_file(path: Path) -> pd.DataFrame:
             on_bad_lines="skip",
         )
 
-        return clean_columns(dataframe)
+        dataframe = clean_columns(dataframe)
+        dataframe = prepare_form_dataframe(dataframe)
+        dataframe = clean_clinical_data(dataframe)
+        return dataframe
 
     raise ValueError(f"Extensión no soportada: {extension}")
 
@@ -364,5 +375,8 @@ if __name__ == "__main__":
         print(f"Archivo seleccionado: {selected}")
         print(f"Registros: {len(dataframe)}")
         print(f"Columnas: {len(dataframe.columns)}")
+
+
+
 
 

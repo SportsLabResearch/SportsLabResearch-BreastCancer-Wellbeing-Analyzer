@@ -1,0 +1,268 @@
+﻿{
+  "metadata": {
+    "project": "SportsLabResearch-BreastCancer-Wellbeing-Analyzer",
+    "version": "1.0.0",
+    "language": "es",
+    "scope": "Interpretación descriptiva y científica; no sustituye la valoración médica."
+  },
+  "variables": {
+    "frecuencia_cardiaca": {
+      "label": "Frecuencia cardíaca",
+      "aliases": [
+        "fc",
+        "heart_rate",
+        "hr",
+        "pulso"
+      ],
+      "unit": "lpm",
+      "description": "Número de contracciones cardíacas por minuto.",
+      "clinical_meaning": "Permite contextualizar la respuesta cardiovascular y su evolución junto con la presión arterial, la fatiga, el estrés y la actividad física.",
+      "low_values": "Un valor bajo puede ser compatible con una buena adaptación cardiovascular, aunque debe interpretarse según síntomas, medicación, edad y nivel de entrenamiento.",
+      "high_values": "Un valor persistentemente elevado puede relacionarse con esfuerzo reciente, estrés, dolor, fiebre, deshidratación, fatiga, medicación u otras condiciones clínicas.",
+      "recommendation": "Interpretar la tendencia individual y evitar conclusiones a partir de una única medición.",
+      "alert": "Los valores acompañados de mareo, dolor torácico, disnea, síncope o palpitaciones requieren valoración sanitaria.",
+      "references": [
+        "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 11th ed. 2021.",
+        "Runowicz CD et al. American Cancer Society/American Society of Clinical Oncology Breast Cancer Survivorship Care Guideline. CA Cancer J Clin. 2016;66:43-73."
+      ]
+    },
+    "presion_arterial_sistolica": {
+      "label": "Presión arterial sistólica",
+      "aliases": [
+        "pas",
+        "systolic_bp",
+        "sbp",
+        "presion_sistolica"
+      ],
+      "unit": "mmHg",
+      "description": "Presión arterial máxima durante la contracción ventricular.",
+      "clinical_meaning": "Es un indicador cardiovascular que debe analizarse mediante mediciones estandarizadas y repetidas.",
+      "low_values": "Un valor bajo puede ser normal en algunas personas, pero adquiere relevancia si aparece con mareo, debilidad, visión borrosa o síncope.",
+      "high_values": "Valores elevados repetidos pueden indicar un aumento del riesgo cardiovascular y requieren confirmación y seguimiento clínico.",
+      "recommendation": "Utilizar el promedio de varias mediciones realizadas en reposo y observar la evolución longitudinal.",
+      "alert": "Una cifra aislada no establece un diagnóstico. Los valores muy elevados o acompañados de síntomas requieren atención sanitaria.",
+      "references": [
+        "McEvoy JW et al. 2024 ESC Guidelines for the management of elevated blood pressure and hypertension. Eur Heart J. 2024;45:3912-4018."
+      ]
+    },
+    "presion_arterial_diastolica": {
+      "label": "Presión arterial diastólica",
+      "aliases": [
+        "pad",
+        "diastolic_bp",
+        "dbp",
+        "presion_diastolica"
+      ],
+      "unit": "mmHg",
+      "description": "Presión arterial mínima durante la relajación ventricular.",
+      "clinical_meaning": "Complementa la presión sistólica en la valoración del estado hemodinámico.",
+      "low_values": "Un valor bajo puede no ser patológico, pero debe revisarse cuando se asocia a síntomas o a cambios respecto al patrón habitual.",
+      "high_values": "Valores elevados repetidos pueden reflejar una mayor resistencia vascular y deben valorarse clínicamente.",
+      "recommendation": "Interpretar conjuntamente con la presión sistólica, los síntomas, la medicación y las condiciones de medición.",
+      "alert": "No utilizar una sola medición para establecer conclusiones diagnósticas.",
+      "references": [
+        "McEvoy JW et al. 2024 ESC Guidelines for the management of elevated blood pressure and hypertension. Eur Heart J. 2024;45:3912-4018."
+      ]
+    },
+    "saturacion_oxigeno": {
+      "label": "Saturación periférica de oxígeno",
+      "aliases": [
+        "spo2",
+        "saturacion",
+        "oxygen_saturation"
+      ],
+      "unit": "%",
+      "description": "Estimación no invasiva del porcentaje de hemoglobina arterial saturada de oxígeno.",
+      "clinical_meaning": "Ayuda a contextualizar el estado respiratorio, aunque puede verse afectada por movimiento, perfusión periférica, temperatura, esmalte de uñas y calidad del sensor.",
+      "low_values": "Una reducción respecto al patrón individual puede reflejar un problema de medición o una alteración respiratoria y debe comprobarse.",
+      "high_values": "Los valores altos dentro del rango fisiológico habitual no suelen indicar una mejoría adicional.",
+      "recommendation": "Repetir la medición en reposo, con la mano caliente e inmóvil, y valorar síntomas y tendencia.",
+      "alert": "Una saturación persistentemente reducida o acompañada de disnea requiere valoración sanitaria.",
+      "references": [
+        "World Health Organization. Pulse Oximetry Training Manual. WHO; 2011."
+      ]
+    },
+    "sueno": {
+      "label": "Sueño",
+      "aliases": [
+        "sleep",
+        "calidad_sueno",
+        "descanso"
+      ],
+      "unit": "puntuación",
+      "description": "Percepción de la cantidad o calidad del sueño y del descanso recuperador.",
+      "clinical_meaning": "Las alteraciones del sueño son frecuentes durante y después del tratamiento del cáncer de mama y pueden relacionarse con fatiga, dolor, estrés y peor calidad de vida.",
+      "low_values": "Cuando una puntuación baja representa peor sueño, puede indicar descanso insuficiente o poco reparador.",
+      "high_values": "Cuando una puntuación alta representa mejor sueño, su mantenimiento sugiere una recuperación percibida favorable.",
+      "recommendation": "Interpretar según la dirección de la escala y analizar conjuntamente sueño, fatiga, dolor y estrés.",
+      "alert": "Los problemas persistentes de sueño con repercusión diurna deben comunicarse al equipo sanitario.",
+      "references": [
+        "Carreira H et al. Associations between breast cancer survivorship and adverse mental health outcomes. J Natl Cancer Inst. 2021;113:1311-1323.",
+        "Wu HS, Harden JK. Symptom burden and quality of life in survivorship. Cancer Nurs. 2015;38:E29-E54."
+      ]
+    },
+    "estado_animo": {
+      "label": "Estado de ánimo",
+      "aliases": [
+        "mood",
+        "animo",
+        "bienestar_emocional"
+      ],
+      "unit": "puntuación",
+      "description": "Valoración subjetiva del bienestar emocional en el momento de la medición.",
+      "clinical_meaning": "Su evolución puede ayudar a detectar cambios emocionales relacionados con el proceso de enfermedad, tratamiento, recuperación y contexto personal.",
+      "low_values": "Cuando una puntuación baja representa peor estado de ánimo, una disminución mantenida puede indicar malestar emocional.",
+      "high_values": "Cuando una puntuación alta representa mejor estado de ánimo, su estabilidad puede reflejar una percepción emocional favorable.",
+      "recommendation": "Analizar tendencias y cambios relevantes respecto al nivel habitual, no únicamente valores aislados.",
+      "alert": "El malestar intenso, persistente o con impacto funcional requiere valoración profesional.",
+      "references": [
+        "Runowicz CD et al. American Cancer Society/American Society of Clinical Oncology Breast Cancer Survivorship Care Guideline. CA Cancer J Clin. 2016;66:43-73.",
+        "Carreira H et al. J Natl Cancer Inst. 2021;113:1311-1323."
+      ]
+    },
+    "estres": {
+      "label": "Estrés percibido",
+      "aliases": [
+        "stress",
+        "tension"
+      ],
+      "unit": "puntuación",
+      "description": "Percepción subjetiva de tensión, sobrecarga o dificultad para afrontar las demandas actuales.",
+      "clinical_meaning": "Puede interactuar con el sueño, la fatiga, el dolor, el estado de ánimo y la recuperación.",
+      "low_values": "Cuando una puntuación baja representa menor estrés, indica una situación percibida más favorable.",
+      "high_values": "Una puntuación elevada mantenida puede reflejar una carga emocional o contextual relevante.",
+      "recommendation": "Examinar la tendencia y su asociación temporal con sueño, síntomas, tratamiento y acontecimientos personales.",
+      "alert": "El estrés persistente con deterioro funcional debe abordarse con el equipo sanitario o psicooncológico.",
+      "references": [
+        "Carreira H et al. J Natl Cancer Inst. 2021;113:1311-1323.",
+        "Wu HS, Harden JK. Cancer Nurs. 2015;38:E29-E54."
+      ]
+    },
+    "fatiga": {
+      "label": "Fatiga",
+      "aliases": [
+        "fatigue",
+        "cansancio"
+      ],
+      "unit": "puntuación",
+      "description": "Sensación subjetiva de cansancio físico, emocional o cognitivo no necesariamente proporcional a la actividad realizada.",
+      "clinical_meaning": "La fatiga relacionada con el cáncer es frecuente y puede afectar la actividad cotidiana, la participación social y la calidad de vida.",
+      "low_values": "Cuando una puntuación baja representa menor fatiga, indica una percepción más favorable de recuperación.",
+      "high_values": "Una puntuación alta o un aumento sostenido puede señalar mayor carga sintomática y necesidad de revisar factores físicos, emocionales y clínicos.",
+      "recommendation": "Analizar junto con sueño, dolor, estrés, actividad física, tratamiento y evolución individual.",
+      "alert": "Una fatiga intensa, nueva o progresiva debe comunicarse al equipo sanitario para descartar causas tratables.",
+      "references": [
+        "Bower JE. Cancer-related fatigue: mechanisms, risk factors, and treatments. Nat Rev Clin Oncol. 2014;11:597-609.",
+        "Abrahams HJG et al. Clin Psychol Rev. 2018;63:1-11.",
+        "Campbell KL et al. Exercise Guidelines for Cancer Survivors. Med Sci Sports Exerc. 2019;51:2375-2390."
+      ]
+    },
+    "dolor": {
+      "label": "Dolor",
+      "aliases": [
+        "pain"
+      ],
+      "unit": "puntuación",
+      "description": "Intensidad subjetiva del dolor percibido en el momento de la valoración.",
+      "clinical_meaning": "El dolor puede afectar al sueño, la movilidad, la actividad física, el estado de ánimo y la calidad de vida.",
+      "low_values": "Cuando una puntuación baja representa menor dolor, indica una situación sintomática más favorable.",
+      "high_values": "Una puntuación elevada, progresiva o diferente del patrón habitual requiere identificar localización, duración, desencadenantes e impacto funcional.",
+      "recommendation": "Registrar tendencia, localización y relación con ejercicio, tratamiento y actividades cotidianas.",
+      "alert": "El dolor nuevo, intenso, persistente o acompañado de otros síntomas debe valorarse clínicamente.",
+      "references": [
+        "Runowicz CD et al. CA Cancer J Clin. 2016;66:43-73.",
+        "Wu HS, Harden JK. Cancer Nurs. 2015;38:E29-E54."
+      ]
+    },
+    "energia": {
+      "label": "Energía percibida",
+      "aliases": [
+        "energy",
+        "vitalidad"
+      ],
+      "unit": "puntuación",
+      "description": "Percepción subjetiva de vitalidad y disponibilidad para realizar actividades.",
+      "clinical_meaning": "Complementa la valoración de fatiga y recuperación, pero no constituye simplemente su medida inversa.",
+      "low_values": "Cuando una puntuación baja representa menor energía, puede relacionarse con fatiga, mal sueño, dolor, estrés o efectos del tratamiento.",
+      "high_values": "Una puntuación alta y estable puede reflejar mejor disposición percibida para la actividad cotidiana.",
+      "recommendation": "Interpretar junto con fatiga, sueño, estado de ánimo y carga de actividad.",
+      "alert": "Una pérdida marcada y persistente de energía debe comentarse con el equipo sanitario.",
+      "references": [
+        "Bower JE. Nat Rev Clin Oncol. 2014;11:597-609.",
+        "Campbell KL et al. Med Sci Sports Exerc. 2019;51:2375-2390."
+      ]
+    },
+    "satisfaccion": {
+      "label": "Satisfacción",
+      "aliases": [
+        "satisfaction"
+      ],
+      "unit": "puntuación",
+      "description": "Valoración subjetiva del grado de satisfacción con la sesión, el proceso o el estado actual.",
+      "clinical_meaning": "Puede aportar información sobre aceptabilidad, experiencia percibida y adherencia potencial.",
+      "low_values": "Una puntuación baja puede señalar barreras, malestar, expectativas no cubiertas o baja aceptabilidad.",
+      "high_values": "Una puntuación alta puede reflejar una experiencia positiva, aunque debe contextualizarse con síntomas y resultados objetivos.",
+      "recommendation": "Utilizarla como indicador complementario para adaptar la intervención y mejorar la experiencia de la participante.",
+      "alert": "No debe interpretarse como indicador clínico aislado.",
+      "references": [
+        "World Health Organization. WHO Global Strategy on People-centred and Integrated Health Services. WHO; 2015."
+      ]
+    },
+    "calidad_vida": {
+      "label": "Calidad de vida",
+      "aliases": [
+        "quality_of_life",
+        "qol",
+        "bienestar_global"
+      ],
+      "unit": "puntuación",
+      "description": "Percepción global del bienestar físico, emocional, funcional y social.",
+      "clinical_meaning": "Es un resultado multidimensional central en la atención y seguimiento de las supervivientes de cáncer de mama.",
+      "low_values": "Cuando una puntuación baja representa peor calidad de vida, puede reflejar una mayor carga de síntomas o limitaciones.",
+      "high_values": "Cuando una puntuación alta representa mejor calidad de vida, indica una percepción global más favorable.",
+      "recommendation": "Interpretar según el instrumento utilizado y junto con fatiga, dolor, sueño, estado de ánimo y función física.",
+      "alert": "Un deterioro sostenido merece una valoración multidisciplinar.",
+      "references": [
+        "Runowicz CD et al. CA Cancer J Clin. 2016;66:43-73.",
+        "Mishra SI et al. Cochrane Database Syst Rev. 2012;CD008465."
+      ]
+    },
+    "rmssd": {
+      "label": "RMSSD",
+      "aliases": [
+        "rmssd",
+        "root_mean_square_successive_differences"
+      ],
+      "unit": "ms",
+      "description": "Índice temporal de variabilidad de la frecuencia cardíaca que refleja principalmente la modulación parasimpática.",
+      "clinical_meaning": "Permite valorar cambios en la regulación autonómica y en la recuperación fisiológica cuando se analiza de forma longitudinal.",
+      "low_values": "Valores reducidos respecto al patrón individual pueden relacionarse con menor modulación parasimpática, fatiga, estrés, enfermedad, alteraciones del sueño o efectos del tratamiento.",
+      "high_values": "Valores superiores al patrón habitual pueden reflejar una mejor recuperación autonómica, aunque deben comprobarse posibles artefactos o errores en los intervalos RR.",
+      "recommendation": "Interpretar mediante tendencias individuales, condiciones de registro estandarizadas y control de la calidad de los intervalos RR.",
+      "alert": "Un valor aislado no permite establecer conclusiones clínicas ni diagnósticas.",
+      "references": [
+        "Task Force of the European Society of Cardiology and the North American Society of Pacing and Electrophysiology. Heart rate variability. Circulation. 1996;93:1043-1065.",
+        "Shaffer F, Ginsberg JP. An Overview of Heart Rate Variability Metrics and Norms. Front Public Health. 2017;5:258."
+      ]
+    },
+    "ln_rmssd": {
+      "label": "LnRMSSD",
+      "aliases": [
+        "ln_rmssd",
+        "lnrmssd",
+        "log_rmssd"
+      ],
+      "unit": "ln(ms)",
+      "description": "Transformación logarítmica natural del RMSSD utilizada para reducir su asimetría y facilitar el análisis longitudinal.",
+      "clinical_meaning": "Permite seguir de manera más estable los cambios relativos de la modulación parasimpática y de la recuperación autonómica.",
+      "low_values": "Una disminución mantenida respecto al nivel individual puede indicar menor recuperación, mayor carga fisiológica, estrés o fatiga.",
+      "high_values": "Un aumento estable respecto al patrón individual puede asociarse con una mejor recuperación autonómica, siempre que la señal sea válida.",
+      "recommendation": "Comparar cada registro con la línea base individual y analizar la tendencia, la variabilidad habitual y las condiciones de medición.",
+      "alert": "La interpretación requiere registros estandarizados y libres de artefactos; no debe utilizarse como diagnóstico aislado.",
+      "references": [
+        "Plews DJ et al. Monitoring training with heart-rate variability: how much compliance is needed for valid assessment? Int J Sports Physiol Perform. 2014;9:783-790.",
+        "Shaffer F, Ginsberg JP. An Overview of Heart Rate Variability Metrics and Norms. Front Public Health. 2017;5:258."
+      ]
+    }
+  }
+}
