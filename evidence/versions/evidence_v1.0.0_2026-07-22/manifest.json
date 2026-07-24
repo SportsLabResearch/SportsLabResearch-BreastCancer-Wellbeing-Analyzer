@@ -1,0 +1,20 @@
+﻿{
+  "engine_name": "SportsLabResearch Scientific Evidence Engine",
+  "project": "SportsLabResearch-BreastCancer-Wellbeing-Analyzer",
+  "evidence_version": "1.0.0",
+  "publication_date": "2026-07-22",
+  "last_search": "2026-07-22",
+  "approval_date": "2026-07-22",
+  "approved": true,
+  "status": "current",
+  "update_interval_days": 30,
+  "publications_included": 0,
+  "clinical_rules_version": "1.0.0",
+  "reference_ranges_version": "1.0.0",
+  "automatic_rule_updates": false,
+  "sources": [
+    "PubMed",
+    "Europe PMC",
+    "Crossref"
+  ]
+}

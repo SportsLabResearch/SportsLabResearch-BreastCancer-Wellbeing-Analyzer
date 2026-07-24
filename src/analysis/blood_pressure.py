@@ -13,6 +13,8 @@ from typing import Dict, Iterable
 import numpy as np
 import pandas as pd
 
+from src.cleaning.clinical_cleaning import clean_clinical_data
+
 from src.analysis.statistics import (
     descriptive_statistics,
     linear_regression,
@@ -463,8 +465,12 @@ def analyse(
     sbp_column: str = "sbp",
     dbp_column: str = "dbp",
 ) -> Dict[str, object]:
+    cleaned = clean_clinical_data(
+        dataframe
+    )
+
     cleaned, quality_issues = clean_blood_pressure(
-        dataframe,
+        cleaned,
         sbp_column=sbp_column,
         dbp_column=dbp_column,
     )
@@ -533,3 +539,4 @@ if __name__ == "__main__":
     print(paired_analysis(sample))
     print()
     print(longitudinal_analysis(sample))
+
