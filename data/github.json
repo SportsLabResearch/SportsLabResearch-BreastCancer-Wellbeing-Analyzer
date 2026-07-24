@@ -1,0 +1,156 @@
+{
+  "source": "https://github.com/SportsLabResearch",
+  "updated_at": "2026-07-20T15:49:10.113154+00:00",
+  "repositories": [
+    {
+      "name": "SportsLabResearch-Rugby7-Referee-Physical-Fatigue-Analyzer",
+      "description": "Open-source scientific software for the analysis of external load, internal load and physical fatigue in Rugby Sevens referees.",
+      "repository_url": "https://github.com/SportsLabResearch/SportsLabResearch-Rugby7-Referee-Physical-Fatigue-Analyzer",
+      "homepage": "",
+      "language": "HTML",
+      "updated_at": "2026-07-20T12:41:53Z",
+      "topics": [],
+      "release": {
+        "tag": "v0.1.0-alpha",
+        "name": "SportsLabResearch-Rugby7-Referee-Physical-Fatigue-Analyzer",
+        "url": "https://github.com/SportsLabResearch/SportsLabResearch-Rugby7-Referee-Physical-Fatigue-Analyzer/releases/tag/v0.1.0-alpha",
+        "published_at": "2026-07-20T07:39:13Z"
+      }
+    },
+    {
+      "name": "SportsLabResearch.github.io",
+      "description": "Official website of the SportsLabResearch ecosystem.",
+      "repository_url": "https://github.com/SportsLabResearch/SportsLabResearch.github.io",
+      "homepage": "",
+      "language": "Python",
+      "updated_at": "2026-07-20T10:47:01Z",
+      "topics": [],
+      "release": {
+        "tag": "",
+        "name": "",
+        "url": "",
+        "published_at": ""
+      }
+    },
+    {
+      "name": "Rugby7-Referee-Fatigue-Analyzer",
+      "description": "Open-source scientific software for analysing subjective fatigue and match demands in Rugby Sevens referees.",
+      "repository_url": "https://github.com/SportsLabResearch/Rugby7-Referee-Fatigue-Analyzer",
+      "homepage": "",
+      "language": "Python",
+      "updated_at": "2026-07-19T16:45:05Z",
+      "topics": [],
+      "release": {
+        "tag": "v1.0.1",
+        "name": "Rugby7 Referee Fatigue Analyzer v1.0.1",
+        "url": "https://github.com/SportsLabResearch/Rugby7-Referee-Fatigue-Analyzer/releases/tag/v1.0.1",
+        "published_at": "2026-07-19T15:55:49Z"
+      }
+    },
+    {
+      "name": "SportsLabResearch-rugby7-referee-spatial-analysis",
+      "description": "Open-source software for the spatial analysis of Rugby Sevens referees using GNSS data.",
+      "repository_url": "https://github.com/SportsLabResearch/SportsLabResearch-rugby7-referee-spatial-analysis",
+      "homepage": "",
+      "language": "Python",
+      "updated_at": "2026-07-18T10:38:30Z",
+      "topics": [],
+      "release": {
+        "tag": "v1.0.0",
+        "name": "",
+        "url": "https://github.com/SportsLabResearch/SportsLabResearch-rugby7-referee-spatial-analysis/releases/tag/v1.0.0",
+        "published_at": "2026-07-18T08:46:19Z"
+      }
+    },
+    {
+      "name": "SportsLabResearch-BreastCancer-Wellbeing-Analyzer",
+      "description": "Scientific software for multidimensional assessment and longitudinal monitoring of wellbeing in women with breast cancer. Integrates patient-reported outcomes, blood pressure, SpO₂ and clinical indicators to generate automated dashboards and scientific reports. Adaptable to other clinical populations.",
+      "repository_url": "https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer",
+      "homepage": "",
+      "language": "Python",
+      "updated_at": "2026-07-16T19:11:40Z",
+      "topics": [],
+      "release": {
+        "tag": "",
+        "name": "",
+        "url": "",
+        "published_at": ""
+      }
+    },
+    {
+      "name": "SportsLabResearch-BloodPressure-Analyzer",
+      "description": "Open-source research software for resting blood pressure analysis, longitudinal monitoring and automated clinical reporting based on ESH 2023 recommendations.",
+      "repository_url": "https://github.com/SportsLabResearch/SportsLabResearch-BloodPressure-Analyzer",
+      "homepage": "",
+      "language": "Python",
+      "updated_at": "2026-07-16T12:20:45Z",
+      "topics": [],
+      "release": {
+        "tag": "v1.0.0",
+        "name": "SportsLabResearch-BloodPressure-Analyzer v1.0.0",
+        "url": "https://github.com/SportsLabResearch/SportsLabResearch-BloodPressure-Analyzer/releases/tag/v1.0.0",
+        "published_at": "2026-07-16T12:08:41Z"
+      }
+    },
+    {
+      "name": "SportsLabResearch-WIMU-DataExtractor",
+      "description": "Open-source extractor for WIMU .QUL and .QUI files with native Excel export.",
+      "repository_url": "https://github.com/SportsLabResearch/SportsLabResearch-WIMU-DataExtractor",
+      "homepage": "",
+      "language": "Python",
+      "updated_at": "2026-07-14T17:24:32Z",
+      "topics": [],
+      "release": {
+        "tag": "v1.0.2",
+        "name": "SportsLabResearch-WIMU-DataExtractor v1.0.2",
+        "url": "https://github.com/SportsLabResearch/SportsLabResearch-WIMU-DataExtractor/releases/tag/v1.0.2",
+        "published_at": "2026-07-14T16:37:45Z"
+      }
+    },
+    {
+      "name": "SportsLabResearch",
+      "description": "International platform for scientific software, research technology and open innovation in sport science, exercise and health.",
+      "repository_url": "https://github.com/SportsLabResearch/SportsLabResearch",
+      "homepage": "",
+      "language": "",
+      "updated_at": "2026-07-11T19:36:46Z",
+      "topics": [],
+      "release": {
+        "tag": "",
+        "name": "",
+        "url": "",
+        "published_at": ""
+      }
+    },
+    {
+      "name": "HRV-Longitudinal-Analyzer",
+      "description": "A professional cross-platform application for longitudinal Heart Rate Variability (HRV) analysis, featuring Kubios data import, automated scientific reporting, advanced statistical analysis, participant management, and interactive dashboards for research, sports science, and clinical monitoring.",
+      "repository_url": "https://github.com/SportsLabResearch/HRV-Longitudinal-Analyzer",
+      "homepage": "",
+      "language": "Python",
+      "updated_at": "2026-07-10T11:20:28Z",
+      "topics": [],
+      "release": {
+        "tag": "v1.4.7",
+        "name": "HRV-Longitudinal-Analyzer v1.4.7",
+        "url": "https://github.com/SportsLabResearch/HRV-Longitudinal-Analyzer/releases/tag/v1.4.7",
+        "published_at": "2026-07-09T06:29:05Z"
+      }
+    },
+    {
+      "name": ".github",
+      "description": "Organization profile and community health files.",
+      "repository_url": "https://github.com/SportsLabResearch/.github",
+      "homepage": "",
+      "language": "",
+      "updated_at": "2026-07-09T13:39:09Z",
+      "topics": [],
+      "release": {
+        "tag": "",
+        "name": "",
+        "url": "",
+        "published_at": ""
+      }
+    }
+  ]
+}

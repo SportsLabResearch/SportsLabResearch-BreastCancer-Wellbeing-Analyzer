@@ -1,0 +1,70 @@
+{
+  "source": "https://zenodo.org/",
+  "updated_at": "2026-07-20T15:49:10.988279+00:00",
+  "records": [
+    {
+      "id": 21451657,
+      "title": "SportsLabResearch-Rugby7-Referee-Physical-Fatigue-Analyzer",
+      "description": "<h2>SportsLabResearch-Rugby7-Referee-Physical-Fatigue-Analyzer v0.1.0-alpha</h2>\n<p>First public alpha release of the SportsLabResearch-Rugby7-Referee-Physical-Fatigue-Analyzer.</p>\n<p>This software has been developed to analyse the physical demands and accumulated fatigue of Rugby Sevens referees using data obtained from wearable tracking systems.</p>\n<h3>Main features</h3>\n<ul>\n<li>Analysis of one, several or all referees.</li>\n<li>Match-by-match physical performance analysis.</li>\n<li>Longitudinal fatigue assessment across tournaments.</li>\n<li>Automatic generation of scientific reports in Microsoft Word.</li>\n<li>Automatic export of summary datasets to Microsoft Excel.</li>\n<li>High-quality graphical visualisations.</li>\n<li>Heatmap generation for physical load metrics.</li>\n<li>Two operating modes:<ul>\n<li>Identified analysis.</li>\n<li>Privacy-preserving anonymised analysis (REF001, REF002...).</li>\n</ul>\n</li>\n</ul>\n<p>This release represents the first modular version of the SportsLabResearch ecosystem, providing a reproducible and extensible framework for referee performance analysis.</p>\n\n\n<p>Developed by <strong>SportsLabResearch</strong></p>\n<p>University of Murcia (Spain)</p>",
+      "doi": "10.5281/zenodo.21451657",
+      "version": "v0.1.0-alpha",
+      "publication_date": "2026-07-20",
+      "record_url": "https://zenodo.org/records/21451657",
+      "creators": [
+        "ppo1968",
+        "Pino-Ortega, José",
+        "López-Baro, Pedro"
+      ]
+    },
+    {
+      "id": 21443419,
+      "title": "Rugby7-Referee-Fatigue-Analyzer",
+      "description": "<h2>Zenodo release</h2>\n<p>This release was created to archive the software in Zenodo.</p>",
+      "doi": "10.5281/zenodo.21443419",
+      "version": "v1.0.1",
+      "publication_date": "2026-07-19",
+      "record_url": "https://zenodo.org/records/21443419",
+      "creators": [
+        "SportsLabResearch",
+        "Pino-Ortega, José",
+        "López-Baro, Pedro"
+      ]
+    },
+    {
+      "id": 21426713,
+      "title": "SportsLabResearch/SportsLabResearch-rugby7-referee-spatial-analysis: v1.0.0",
+      "description": "Open-source software for the spatial analysis of Rugby Sevens referees using GNSS data.",
+      "doi": "10.5281/zenodo.21426713",
+      "version": "v1.0.0",
+      "publication_date": "2026-07-18",
+      "record_url": "https://zenodo.org/records/21426713",
+      "creators": [
+        "SportsLabResearch"
+      ]
+    },
+    {
+      "id": 21395622,
+      "title": "SportsLabResearch/SportsLabResearch-BloodPressure-Analyzer: SportsLabResearch-BloodPressure-Analyzer v1.0.0",
+      "description": "<h1>SportsLabResearch-BloodPressure-Analyzer v1.0.0</h1>\n<p>First stable release.</p>\n<h2>Features</h2>\n<ul>\n<li>Resting blood pressure analysis.</li>\n<li>Automatic baseline calculation.</li>\n<li>ESH 2023 interpretation.</li>\n<li>Excel connector.</li>\n<li>CSV connector.</li>\n<li>Clinical dashboard.</li>\n<li>Word report.</li>\n<li>Excel report.</li>\n<li>Scientific documentation.</li>\n<li>GitHub Pages documentation.</li>\n</ul>\n<h2>Scientific framework</h2>\n<p>European Society of Hypertension (ESH) 2023 Guidelines.</p>\n<h2>Author</h2>\n<p>José Pino-Ortega</p>\n<p>SportsLabResearch</p>",
+      "doi": "10.5281/zenodo.21395622",
+      "version": "v1.0.0",
+      "publication_date": "2026-07-16",
+      "record_url": "https://zenodo.org/records/21395622",
+      "creators": [
+        "ppo1968"
+      ]
+    },
+    {
+      "id": 21361700,
+      "title": "SportsLabResearch-WIMU-DataExtractor: SportsLabResearch-WIMU-DataExtractor v1.0.2",
+      "description": "<h2>Added</h2>\n<ul>\n<li>Added a new <code>documents/</code> directory.</li>\n<li>Included the Scientific Blueprint document.</li>\n<li>Included the Scientific Blueprint infographic.</li>\n<li>Improved project scientific documentation.</li>\n<li>Updated links to GitHub Pages and Zenodo resources.</li>\n</ul>\n<h2>Documentation</h2>\n<ul>\n<li>GitHub repository</li>\n<li>GitHub Pages technical documentation</li>\n<li>Zenodo archived version with DOI</li>\n</ul>\n<p>This release strengthens the project's Open Science ecosystem by integrating scientific documentation with the source code and archived software release.</p>",
+      "doi": "10.5281/zenodo.21361700",
+      "version": "v1.0.2",
+      "publication_date": "2026-07-14",
+      "record_url": "https://zenodo.org/records/21361700",
+      "creators": [
+        "Pino-Ortega, José"
+      ]
+    }
+  ]
+}
