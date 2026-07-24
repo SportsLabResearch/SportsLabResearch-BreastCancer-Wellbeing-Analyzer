@@ -1,55 +1,30 @@
----
-hide:
-  - toc
----
+﻿# SportsLabResearch Breast Cancer Wellbeing Analyzer
 
-# BreastCancer Wellbeing Analyzer
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21536397.svg)](https://doi.org/10.5281/zenodo.21536397)
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer)
-[![Release](https://img.shields.io/github/v/release/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer)](https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer/releases)
-[![Zenodo](https://img.shields.io/badge/Zenodo-DOI-1682D4?logo=zenodo)](https://zenodo.org/search?q=SportsLabResearch-BreastCancer-Wellbeing-Analyzer)
 
-Scientific software for importing, organizing and analysing longitudinal wellbeing data in women with breast cancer.
+Scientific software for the multidimensional assessment and longitudinal monitoring of wellbeing and health-related outcomes in women with breast cancer.
 
-<div class="hero-actions" markdown>
-[GitHub](https://github.com/SportsLabResearch/SportsLabResearch-BreastCancer-Wellbeing-Analyzer){ .md-button .md-button--primary }
-[Documentation](https://sportslabresearch.github.io/SportsLabResearch-BreastCancer-Wellbeing-Analyzer/){ .md-button }
-[Zenodo](https://zenodo.org/search?q=SportsLabResearch-BreastCancer-Wellbeing-Analyzer){ .md-button }
-</div>
+## Main capabilities
 
-## Main features
+- ICBR-M wellbeing model
+- Blood pressure analysis
+- SpO₂ monitoring
+- Sleep, mood, stress, fatigue and pain
+- PRE/POST analysis
+- Longitudinal monitoring
+- Clinical dashboards
+- Word and Excel reports
 
-<div class="grid cards" markdown>
+## Target population
 
--   **Questionnaire data**
+The primary application is women with breast cancer participating in exercise and health programmes.
 
-    Reads local Excel, CSV and TXT exports produced from Google Forms or synchronized through Google Drive.
+The modular architecture can be adapted to other clinical and healthy populations.
 
--   **Quality control**
+## Project status
 
-    Organizes records, cleans column names and excludes invalid or duplicated output files.
+Version: **0.1.0-alpha**
 
--   **Wellbeing analysis**
+Status: **Development**
 
-    Supports longitudinal analysis of wellbeing indicators collected by the project questionnaire.
-
--   **Scientific outputs**
-
-    Provides a reproducible basis for Excel and Word reports, tables and figures.
-
-</div>
-
-## Workflow
-
-```mermaid
-flowchart LR
-    A[Google Forms] --> B[Excel / CSV export]
-    B --> C[Automatic source detection]
-    C --> D[Data cleaning]
-    D --> E[Wellbeing analysis]
-    E --> F[Excel and Word reports]
-```
-
-## Scope
-
-The software is intended for research and monitoring workflows. It does not replace clinical assessment, diagnosis or medical decision-making.

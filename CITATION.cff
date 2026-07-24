@@ -7,7 +7,7 @@ authors:
   - family-names: "Pino-Ortega"
     given-names: "José"
 
-version: "0.1.0-alpha"
+version: "1.0.0"
 
 license: MIT
 
@@ -33,3 +33,6 @@ keywords:
   - pain
   - longitudinal monitoring
   - SportsLabResearch
+doi: "10.5281/zenodo.21536397"
+date-released: "2026-07-24"
+

@@ -1,5 +1,8 @@
 ﻿# SportsLabResearch-BreastCancer-Wellbeing-Analyzer
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21536397.svg)](https://doi.org/10.5281/zenodo.21536397)
+
+
 ## Scientific software for the multidimensional assessment of wellbeing in women with breast cancer
 
 SportsLabResearch-BreastCancer-Wellbeing-Analyzer is an open scientific software platform developed to support the assessment and longitudinal monitoring of wellbeing, recovery and health-related outcomes in women with breast cancer.
@@ -57,3 +60,4 @@ Author:
 José Pino-Ortega
 
 MIT License
+
